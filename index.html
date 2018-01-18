@@ -1,30 +1,799 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Touch and Gestures</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>
-    <link href="CSS/style.css" rel="stylesheet" type="text/css">
-    
+    <link href="CSS/style.css" rel="stylesheet" type="text/css"> 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+     <script>
+    $(document).bind("mobileinit", function() {
+        $.mobile.defaultPageTransition = 'slide';
+    }); 
+    </script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+     
 </head>
-<div data-role="page" id="introduction">
-    <div id="wrapper">
-        <div data-role="header" class="banner">
-            <img src="images/touch.jpg" 
-	alt="Pexels image of phone"/>
-<h1>Touch and Gestures</h1>
-<h2>Webpage for the mobile context</h2>  
-        </div>    
-        <div data-role="navbar">
-	<!--The primary navigation for the page -->
-	<ul>
-		<li><a href="#introduction"/></li>
-        <li><a href="#"/></li>
-	</ul>
-	</div>
-        <P>Adding infomation to see if this works</P>
-    </div>
+    <body>
+        <div data-role="page" id="introduction" >
+            <div data-role="header" class="banner">
+                <img src="images/touch.jpg" 
+                alt="Pexels image of phone"/>
+                <a href="#panelIntro" data-role="button" data-icon="bars" data-iconpos="notext">Menu</a>
+                <a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext"></a>
+            </div>
+            <div data-role="panel" id="panelIntro" data-theme="b">
+                    <div data-role="header">
+                        <h3>Menu</h3>
+                    </div>
+                <div data-role="content">
+        <!--The primary navigation for the page -->
+                    <ul data-role="listview">
+                        <li><a href="#introduction" data-role="button" class="ui-disabled" data-icon="home">Introducton</a></li>
+                        <li><a href="#history">History</a></li>
+                        <li><a href="#problems">Problems of touch</a></li>
+                        <li><a href="#types">Types of gesture</a></li>
+                        <li><a href="#person">Personas</a></li>
+                        <li><a href="#conclution">Conclution</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div data-role="content">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#introduction" data-role="button"  class="ui-disabled">Introduction</a></li>
+                        <li><a href="#outcomes" data-theme="b">Outcomes</a></li>
+                    </ul>
+                </div>
+                <h1>Touch and Gestures</h1>
+                   <h2>The reasons for choosing Touch and gestures.</h2>
+                
+                <p>The main focus of this website is to demonstrate the general functionality of touch screens that people will use on a daily basis to navigate via mobile phones. </p>
+                
+                <p>This subject has been chosen as most people in the 21st century all carry a touch screen phone around with them and is in constant use.</p>
+                
+                <p>For many years the functionality of the touch screen phone has been the same but in recent times it has changed rather dramatically to most phones that everyone possesses.</p>
+            </div>
+         <div data-role="footer"> 
+                <div data-role="collapsible" data-theme="b">
+                    <h2>References</h2>
+                    <ol data-role="listview" data-inset="true">
+                        <li><a href="https://www.pexels.com/search/phones/">Pexels Images</a></li>
+                    </ol>
+                </div>
+             <p id="footer-copyright">Rupert Garland 2018 &copy;</p>
+            </div>
+         </div> 
+        
+        
+         <div data-role="page" id="outcomes">
+            <div data-role="header" class="banner">
+                <img src="images/touch.jpg" 
+                alt="Pexels image of phone"/>
+                <a href="#paneloutcome" data-role="button" data-icon="bars" data-iconpos="notext">Menu</a>
+                <a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext"></a>
+            </div>
+            
+            <div data-role="panel" id="paneloutcome" data-theme="b">
+                    <div data-role="header">
+                         <h3>Menu</h3>
+                    </div>
+                <div data-role="content">
+        <!--The primary navigation for the page -->
+                <ul data-role="listview">
+                    <li><a href="#introduction" data-role="button" class="ui-disabled" data-icon="home">Introducton</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#problems">Problems of touch</a></li>
+                    <li><a href="#types">Types of gesture</a></li>
+                    <li><a href="#person">Personas</a></li>
+                    <li><a href="#conclution">Conclution</a></li>
+                </ul>
+            </div>
+                </div>
+        
+            <div data-role="content">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#introduction" data-theme="b">Introduction</a></li>
+                        <li><a href="#outcomes" data-role="button" class="ui-disabled">Outcomes</a></li>
+                    </ul>
+                </div>
+                <h1>Outcomes</h1>
+                   <h2>Outcomes for this webpage.</h2>
+                <p>This website will explain how things have changed over time to create the phones that people are using in the modern day and will have to get used to as there are those who don’t necessarily like the idea of change. It will note the issues that people will face while using the touch screen on the phone as well as the changes to its functionality when a new update will be pushed onto the users.</p>
+                
+                <p>The website will also explain the use of touch by showing the types of gestures that are available for the user to use. As well as the extra gestures needed when it comes to a lot of the new devices that is out on the market. </p>
+                
+                <p>It is important to note the way that people communicate with each other has changed since the use of touch screens.</p>
+                
+                <p>In conclusion there will be some personas of varied types of people who will be using the functionality of touch and gestures on their phones.</p>
+                
+            </div>
+               <div data-role="footer"> 
+                <div data-role="collapsible" data-theme="b">
+                    <h2>References</h2>
+                    <ol data-role="listview" data-inset="true">
+                        <li><a href="https://www.pexels.com/search/phones/">Pexels Images</a></li>
+                    </ol>
+                </div>
+                   <p id="footer-copyright">Rupert Garland 2018 &copy;</p>
+            </div>
+         </div> 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     
-</div>
+        <div data-role="page" id="history" data-transition="turn">
+            <div data-role="header" class="banner">
+                <img src="images/hand-top-white-old.jpg" 
+                alt="Pexels image of phone"/>
+                <a href="#panelhistory" data-role="button" data-icon="bars" data-iconpos="notext">Menu</a>
+                <a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext"></a>
+            </div>
+            
+                <div data-role="panel" id="panelhistory" data-theme="b">
+                    <div data-role="header">
+                        <h3>Menu</h3>
+                    </div>
+                <div data-role="content">
+        <!--The primary navigation for the page -->
+                <ul data-role="listview">
+                    <li><a href="#introduction" data-role="button" data-icon="home">Introducton</a></li>
+                    <li><a href="#history" data-role="button" class="ui-disabled">History</a></li>
+                    <li><a href="#problems">Problems of touch</a></li>
+                    <li><a href="#types">Types of gesture</a></li>
+                    <li><a href="#person">Personas</a></li>
+                    <li><a href="#conclution">Conclution</a></li>
+                </ul>
+            </div>
+                </div>
+            
+            <div data-role="content">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#history" data-role="button" class="ui-disabled">History</a></li>
+                        <li><a href="#startingPoint" data-theme="b">The Beginning</a></li>
+                    </ul>
+                </div>
+                <h1>History</h1>
+                   <h2>The History of mobile phones</h2>
+                <p>The history of mobile phones has come a long way since they launched.</p>
+                <p>The first mobile phone was created in 1973 by Motorola when they made a commercial handset known as the ‘Motorola Dynastic 8000X’, the first phone call was made to a rival phone company where one of the engineers Martin Cooper said that he was calling on a mobile telephone. This phone was known to have “30 minutes of talk-time, six hours standby” and had a price tag of around £2639(This wasn’t made with the mass market in mind). With its small amount of battery life and the high price tag it was the first step towards what we know today as the mobile phone (Goodwin, 2017).</p>
+            </div>
+              <div data-role="footer"> 
+                <div data-role="collapsible" data-theme="b">
+                    <h2>References</h2>
+                    <ol data-role="listview" data-inset="true">
+                        <li><a href="http://www.knowyourmobile.com/nokia/nokia-3310/19848/history-mobile-phones-1973-2008-handsets-made-it-all-happen">The Fist Mobile Phone</a></li>
+                        <li><a href="https://www.pexels.com/search/phones/">Pexels Images</a></li>
+                    </ol>
+                </div>
+                  <p id="footer-copyright">Rupert Garland 2018 &copy;</p>
+            </div>
+        </div>
+        
+        
+        <div data-role="page" id="startingPoint" data-transition="turn">
+            <div data-role="header" class="banner">
+                <img src="images/hand-top-white-old.jpg" 
+                alt="Pexels image of phone"/>
+                <a href="#panelstart" data-role="button" data-icon="bars" data-iconpos="notext">Menu</a>
+                <a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext"></a>
+            </div>
+            
+                <div data-role="panel" id="panelstart" data-theme="b">
+                    <div data-role="header">
+                         <h3>Menu</h3>
+                    </div>
+                <div data-role="content">
+        <!--The primary navigation for the page -->
+                <ul data-role="listview">
+                    <li><a href="#introduction" data-role="button" data-icon="home">Introducton</a></li>
+                    <li><a href="#history" data-role="button" class="ui-disabled">History</a></li>
+                    <li><a href="#problems">Problems of touch</a></li>
+                    <li><a href="#types">Types of gesture</a></li>
+                    <li><a href="#person">Personas</a></li>
+                    <li><a href="#conclution">Conclution</a></li>
+                </ul>
+            </div>
+                </div>
+            
+            <div data-role="content">
+                 <div data-role="navbar">
+                    <ul>
+                        <li><a href="#history" data-theme="b">History</a></li>
+                        <li><a href="#startingPoint" data-role="button" class="ui-disabled">The Beginning</a></li>
+                    </ul>
+                </div>
+                <h1>The Beginning</h1>
+                   <h2>The begining of touchscreen</h2>
+                <p>Touch screens had been out in use dating since the days of 1992 where the ‘IBM Simon’ was created  (Erickson, 2012), this has been referred to as the first smartphone but that name wasn’t a household name at this point. However in 2007 the first iPhone was released and this then has become the staple for when smartphones really started to take a hold on the mass market as they made them simpler to use, this device was revolutionary, a completely touch-based device with a virtual keyboard and via good marketing has been made to be appealing for the general public rather than just the rich, this was helped by the excellent sales pitch from Steve Jobs, he made the mass market feel they NEED this device in their lives, “Apple is going to reinvent the phone” said Steve Jobs (Dan Grabham, 2018). This innovation into the touch screen mass market has led to people wanting to get tablets and other devices, making Apple a giant provider.</p>
+                                <div class="video-wrapper">
+                                  <div class="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/x7qPAY9JqE4"  allowfullscreen></iframe>
+                                  </div> 
+                                    <p>Steve Jobs unvailing the iPhone, 2007<br />
+                                    <small>All rights to this video are not mine, the user is "superapple4ever
+                                " on YouTube</small>
+                                    </p>
+                                </div>
+                <p>Something else to worthy note is that it is not just screen that has changed but the way people watch media such as videos, social media and news to change its use from just a phone.</p>
+            </div>
+              <div data-role="footer"> 
+                <div data-role="collapsible" data-theme="b">
+                    <h2>References</h2>
+                    <ol data-role="listview" data-inset="true">
+                        <li><a href="http://mashable.com/2012/11/09/touchscreen-history/#Qpa3tALtYsqO">reference</a></li>
+                        <li><a href="https://www.t3.com/features/a-brief-history-of-the-iphone">History of iPhone</a></li>
+                        <li><a href="https://www.pexels.com/search/phones/">Pexels Images</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=x7qPAY9JqE4">iPhone reveal</a></li>
+                    </ol>
+                </div>
+                  <p id="footer-copyright">Rupert Garland 2018 &copy;</p>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div data-role="page" id="problems">
+            <div data-role="header" class="banner">
+                <img src="images/tabletandphone.jpeg" 
+                alt="Pexels image of phone"/>
+                <a href="#panelproblem" data-role="button" data-icon="bars" data-iconpos="notext" >Menu</a>
+                <a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext"></a>
+            </div>    
+            
+            <div data-role="panel" id="panelproblem" data-theme="b">
+                    <div data-role="header">
+                         <h3>Menu</h3>
+                    </div>
+                <div data-role="content">
+        <!--The primary navigation for the page -->
+                <ul data-role="listview">
+                    <li><a href="#introduction" data-role="button" data-icon="home">Introducton</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#problems"  data-role="button" class="ui-disabled">Problems of touch</a></li>
+                    <li><a href="#types">Types of gesture</a></li>
+                    <li><a href="#person">Personas</a></li>
+                    <li><a href="#conclution">Conclution</a></li>
+                </ul>
+            </div>
+                </div>
+            
+            <div data-role="content">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#problems" data-role="button" class="ui-disabled">Problems</a></li>
+                        <li><a href="#changes" data-theme="b">Changes</a></li>
+                    </ul>
+                </div>
+                <h1>Problems</h1>
+                   <h2>The problems of touch screens</h2>
+                <p>Touch screens have been created to react with the fingertips of a person but this will also mean that the screen is also going to react to the palm of the user, this clearly becomes more of an issue when the phone screen gets larger, the user will still have to reach to the top left of the screen to go to different pages when their palm will react to the screen. This issue is most prominent when it comes to the phones that now have a curved edge to it, like the Samsung Galaxy S7.</p>
+                
+                <p>Further situations can arise from touch screens is “the lack of well-known standards in multi-touch interface design and in the use of gestures makes the user interface difficult to use and interpret.” (E.Motta, 2012) When it comes to users needing to use them, most multi-touch will rely on the use of two hands being used, there needs to be more ways to use the same functions with just one hand on the same device.</p>
+                
+            </div>
+              <div data-role="footer"> 
+                <div data-role="collapsible" data-theme="b">
+                    <h2>References</h2>
+                    <ol data-role="listview" data-inset="true">
+                        <li><a href="https://www.pexels.com/search/phones/">Pexels Images</a></li>
+                       <li><a href="http://www.sciencedirect.com/science/article/pii/S1071581912000948">Journal on Human-Computer Studies</a></li>
+                    </ol>
+                </div>
+                  <p id="footer-copyright">Rupert Garland 2018 &copy;</p>
+            </div>
+        </div>
+        
+        
+         <div data-role="page" id="changes">
+            <div data-role="header" class="banner">
+                <img src="images/tabletandphone.jpeg" 
+                alt="Pexels image of phone"/>
+                <a href="#panelchanges" data-role="button" data-icon="bars" data-iconpos="notext">Menu</a>
+                <a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext"></a>
+            </div>    
+            
+            <div data-role="panel" id="panelchanges" data-theme="b">
+                    <div data-role="header">
+                        <h3>Menu</h3>
+                    </div>
+                <div data-role="content">
+        <!--The primary navigation for the page -->
+                <ul data-role="listview">
+                    <li><a href="#introduction" data-role="button" data-icon="home">Introducton</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#problems"  data-role="button" class="ui-disabled">Problems of touch</a></li>
+                    <li><a href="#types">Types of gesture</a></li>
+                    <li><a href="#person">Personas</a></li>
+                    <li><a href="#conclution">Conclution</a></li>
+                </ul>
+            </div>
+                </div>
+            
+            <div data-role="content">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#problems" data-theme="b">Problems</a></li>
+                        <li><a href="#changes" data-role="button" class="ui-disabled">Changes</a></li>
+                    </ul>
+                </div>
+                <h1>Changes</h1>
+                   <h2>Changes over time</h2>
+                
+                <p>The changes can become a problem over time is that they won’t be consistent with how they were in the past, these changes can come from the updates that get downloaded on to the phones and tablets, the biggest change that became an issue is in the alterations on iPads. In the past dragging down from the top used to display notifications, it then got changed, now looks like the lock screen which has coursed some problems as people think they are locking their device, ”you'll find yourself on your lock screen, which Apple called a cover sheet during the betas. And this isn't a bug. This nuisance was intentional.” (Peterson, 2017). </p>
+                
+                <p>A further problem that can come from the inconsistency of products, there are many different types of android devices out there, this mean that “there's a slight learning curve with each Android device” (Eadicicco, 2015) as many functions will be in different location on the screen as well as the phones behaving differently for usability with gestures and not all phones will be able to do the same things.</p>
+                
+            </div>
+               <div data-role="footer"> 
+                <div data-role="collapsible" data-theme="b">
+                    <h2>References</h2>
+                    <ol data-role="listview" data-inset="true">
+                        <li><a href="https://www.pexels.com/search/phones/">Pexels Images</a></li>
+                        <li><a href="https://ios.gadgethacks.com/news/people-are-pissed-about-ios-11s-new-notification-system-0177949/">IOS Notifications</a></li>
+                        <li><a href="http://uk.businessinsider.com/biggest-difference-between-android-iphone-2015-8">Android differnces</a></li>
+                    </ol>
+                </div>
+                   <p id="footer-copyright">Rupert Garland 2018 &copy;</p>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+          <div data-role="page" id="types">
+            <div data-role="header" class="banner">
+                <img src="images/types.jpg" 
+                alt="Pexels image of phone"/>
+                <a href="#paneltypes" data-role="button" data-icon="bars" data-iconpos="notext" >Menu</a>
+                <a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext"></a>
+            </div>    
+            
+            <div data-role="panel" id="paneltypes" data-theme="b">
+                    <div data-role="header">
+                         <h3>Menu</h3>
+                    </div>
+                <div data-role="content">
+        <!--The primary navigation for the page -->
+                <ul data-role="listview">
+                    <li><a href="#introduction" data-role="button" data-icon="home">Introducton</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#problems">Problems of touch</a></li>
+                    <li><a href="#types"  data-role="button" class="ui-disabled">Types of gesture</a></li>
+                    <li><a href="#person">Personas</a></li>
+                    <li><a href="#conclution">Conclution</a></li>
+                </ul>
+            </div>
+                </div>
+            
+            <div data-role="content">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#types" data-role="button" class="ui-disabled">Types of gestures</a></li>
+                        <li><a href="#iphone" data-theme="b">iPhoneX</a></li>
+                        
+                    </ul>
+                </div>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#tablet" data-theme="b">Tablet differences</a></li>
+                        <li><a href="#com" data-theme="b">Communications</a></li>
+                    </ul>
+                </div>
+                <h1>Gesture types</h1>
+                   <h2>The types of gestures that are used in mobile devices</h2>
+                
+                <p>The main types of gestures used in mobile devices are made up of 8 types shown in the image below, these will be the best way for a person to navigate their device while on the go and be as close to as an experience as using a mouse without any problems to functionality. The next goal would be to keep these sorts of gestures standard in all mobile devices otherwise there will be confusion when a user goes onto a different phone and the user experience lacks consistency.</p>
+                
+                <img  src="images/gestures.jpg" alt="Phone Gesture types"/>
+                <p>The Types of Gestures used on Phones<br />
+			<small>Rights to 'thenextweb'</small>
+			</p>
+                
+                <p>Some gestures that a mobile device will use do require the use of two hands for example the pinch to zoom in or out, one hand will hold the phone as the user will need the other hand with their index finger and thumb.  This can be a problem when the user is only using one hand; for example if they are looking for directions in a navigation app.</p>
+                
+            </div>
+                <div data-role="footer"> 
+                <div data-role="collapsible" data-theme="b">
+                    <h2>References</h2>
+                    <ol data-role="listview" data-inset="true">
+                        <li><a href="https://www.pexels.com/search/phones/">Pexels Images</a></li>
+                        <li><a href="https://thenextweb.com/dd/2015/11/09/how-to-implement-gestures-into-your-mobile-design/">Image of Gesture Types</a></li>
+                    </ol>
+                </div>
+                    <p id="footer-copyright">Rupert Garland 2018 &copy;</p>
+            </div>
+        </div>
+        
+        
+        
+         <div data-role="page" id="iphone">
+            <div data-role="header" class="banner">
+                <img src="images/types.jpg" 
+                alt="Pexels image of phone"/>
+                <a href="#paneliphone" data-role="button" data-icon="bars" data-iconpos="notext" >Menu</a>
+                <a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext"></a>
+            </div>    
+            
+            <div data-role="panel" id="paneliphone" data-theme="b">
+                    <div data-role="header">
+                        <h3>Menu</h3>
+                    </div>
+                <div data-role="content">
+        <!--The primary navigation for the page -->
+                <ul data-role="listview">
+                    <li><a href="#introduction" data-role="button" data-icon="home">Introducton</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#problems">Problems of touch</a></li>
+                    <li><a href="#types"  data-role="button" class="ui-disabled">Types of gesture</a></li>
+                    <li><a href="#person">Personas</a></li>
+                    <li><a href="#conclution">Conclution</a></li>
+                </ul>
+            </div>
+                </div>
+            
+            <div data-role="content">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#types" data-theme="b">Types of gestures</a></li>
+                        <li><a href="#iphone" data-role="button" class="ui-disabled">iPhoneX</a></li>
+                        
+                    </ul>
+                </div>
+                 <div data-role="navbar">
+                    <ul>
+                    
+                        <li><a href="#tablet" data-theme="b">Tablet differences</a></li>
+                        <li><a href="#com" data-theme="b">Communications</a></li>
+                    </ul>
+                </div>
+                <h1>The iPhoneX</h1>
+                   <h2>The extra gestures needed for the iPhoneX</h2>
+                
+                <p>Although the iPhoneX wasn’t the first smart phone to be completely bezel-less or have no home button but the iPhoneX is the best example to illustrate how gestures are the only way of using the phone other than the power and volume buttons. To use the phone a person is going to have to learn a lot of new gestures that are not normally used in most other phones. Instead of a home button they now have a bar at the bottom that needs to but swiped up to go to the home screen. There is also the extra gesture to get up the previously used apps where the user has to swipe up and over to the left or right to then switch between apps. At first using the phone this can be frustrating but once used to it and users find they are trying to swipe up on other devices. It has been said “This is the biggest learning curve of any iPhone ever” (Brownlee, 2017) and that’s because iPhones haven’t really changed until now, these extra gestures have to be learned. </p>
+                
+                <img  src="images/iphoneXges.jpg" alt="iPhone interface design"/>
+                <p>iPhoneX interface design sheet</p>
+            </div>
+               <div data-role="footer"> 
+                <div data-role="collapsible" data-theme="b">
+                    <h2>References</h2>
+                    <ol data-role="listview" data-inset="true">
+                        <li><a href="https://www.pexels.com/search/phones/">Pexels Images</a></li>
+                        <li><a href="https://boingboing.net/2017/11/07/iphone-x-is-a-user-interface-d.html">iPhoneX Interface Sheet</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=9Ca8zWJOlFQ&t=726s">Marques Brownlee on the iPhoneX</a></li>
+                    </ol>
+                </div>
+                   <p id="footer-copyright">Rupert Garland 2018 &copy;</p>
+            </div>
+        </div>
+        
+        
+             <div data-role="page" id="tablet">
+            <div data-role="header" class="banner">
+                <img src="images/types.jpg" 
+                alt="Pexels image of phone"/>
+                <a href="#paneltablet" data-role="button" data-icon="bars" data-iconpos="notext" >Menu</a>
+                <a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext"></a>
+            </div>    
+            
+            <div data-role="panel" id="paneltablet" data-theme="b">
+                    <div data-role="header">
+                        <h3>Menu</h3>
+                    </div>
+                <div data-role="content">
+        <!--The primary navigation for the page -->
+                <ul data-role="listview">
+                    <li><a href="#introduction" data-role="button" data-icon="home">Introducton</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#problems">Problems of touch</a></li>
+                    <li><a href="#types"  data-role="button" class="ui-disabled">Types of gesture</a></li>
+                    <li><a href="#person">Personas</a></li>
+                    <li><a href="#conclution">Conclution</a></li>
+                </ul>
+            </div>
+                </div>
+            
+            <div data-role="content">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#types" data-theme="b">Types of gestures</a></li>
+                        <li><a href="#iphone" data-theme="b">iPhoneX</a></li>
+                       
+                    </ul>
+                </div>
+                <div data-role="navbar">
+                    <ul>
+                       
+                        <li><a href="#tablet" data-role="button" class="ui-disabled">Tablet differences</a></li>
+                        <li><a href="#com" data-theme="b">Communications</a></li>
+                    </ul>
+                </div>
+                <h1>The big differences</h1>
+                   <h2>The diffrences of tablets to mobiles</h2>
+                
+                <p>Phones and tablets are not too dissimilar to each other however there are a few significant differences because there is more screen space that the user can work with, this means there are gestures that can be used using the whole hand; this is shown when the iPad user can either use 4-5 fingers to interact with the device.</p>
+                
+                <p>A user can use 4-5 fingers to pinch the screen and this will act the same as using the home button on the device, this can make the whole process seem as if it is really smooth. The users will also be able to switch apps, as well as change between the previously used apps with ease.</p>
+                
+            </div>
+                   <div data-role="footer"> 
+                <div data-role="collapsible" data-theme="b">
+                    <h2>References</h2>
+                    <ol data-role="listview" data-inset="true">
+                        <li><a href="https://www.pexels.com/search/phones/">Pexels Images</a></li>
+                    </ol>
+                </div>
+                       <p id="footer-copyright">Rupert Garland 2018 &copy;</p>
+            </div>
+        </div>
+        
+        
+        
+        <div data-role="page" id="com" data-title="communication">
+            <div data-role="header" class="banner">
+                <img src="images/types.jpg" 
+                alt="Pexels image of phone"/>
+                <a href="#panelcom" data-role="button" data-icon="bars" data-iconpos="notext" >Menu</a>
+                <a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext"></a>
+            </div>    
+            
+            <div data-role="panel" id="panelcom" data-theme="b">
+                    <div data-role="header">
+                         <h3>Menu</h3>
+                    </div>
+                <div data-role="content">
+        <!--The primary navigation for the page -->
+                <ul data-role="listview">
+                    <li><a href="#introduction" data-role="button" data-icon="home">Introducton</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#problems">Problems of touch</a></li>
+                    <li><a href="#types"  data-role="button" class="ui-disabled">Types of gesture</a></li>
+                    <li><a href="#person">Personas</a></li>
+                    <li><a href="#conclution">Conclution</a></li>
+                </ul>
+            </div>
+                </div>
+            
+            <div data-role="content">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#types" data-theme="b">Types of gestures</a></li>
+                        <li><a href="#iphone" data-theme="b">iPhoneX</a></li>
+                        
+                    </ul>
+                </div>
+                <div data-role="navbar">
+                    <ul>
+                       
+                        <li><a href="#tablet" data-theme="b">Tablet differences</a></li>
+                        <li><a href="#com" data-role="button" class="ui-disabled">Communications</a></li>
+                    </ul>
+                </div>
+                <h1>Connecting</h1>
+                   <h2>How people communicate</h2>
+                <p>The way that people communicate on mobile phones has completely changed as well, this mainly started when the keyboard was then created as a digital keyboard on the screen rather than sit under the screen as physical buttons to push, this has allowed the screen to be bigger as well as have more functionality as the visible appearance of the keyboard can change.</p>
+            </div>
+              <div data-role="footer"> 
+                <div data-role="collapsible" data-theme="b">
+                    <h2>References</h2>
+                    <ol data-role="listview" data-inset="true">
+                       <li><a href="https://www.pexels.com/search/phones/">Pexels Images</a></li>
+                    </ol>
+                </div>
+                  <p id="footer-copyright">Rupert Garland 2018 &copy;</p>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+              <div data-role="page" id="person" data-title="communication">
+            <div data-role="header" class="banner">
+                <img src="images/connecting.jpeg" 
+                alt="Pexels image of phone"/>
+                <a href="#panelperson" data-role="button" data-icon="bars" data-iconpos="notext">Menu</a>
+                <a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext"></a>
+            </div>    
+            
+            <div data-role="panel" id="panelperson" data-theme="b">
+                    <div data-role="header" >
+                         <h3>Menu</h3>
+                    </div>
+                <div data-role="content">
+        <!--The primary navigation for the page -->
+                <ul data-role="listview">
+                    <li><a href="#introduction" data-role="button" data-icon="home">Introducton</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#problems">Problems of touch</a></li>
+                    <li><a href="#types">Types of gesture</a></li>
+                    <li><a href="#person"  data-role="button" class="ui-disabled">Personas</a></li>
+                    <li><a href="#conclution">Conclution</a></li>
+                </ul>
+            </div>
+                </div>
+            
+            <div data-role="content">
+                
+                <h1>Functionality</h1>
+                   <h2>How people use their mobile phones</h2>
+                
+                <p>The way in which people use their mobile phones has completely changed since the inclusion of touch screen, the functionality of a mobile has changed, now phones can do so much more and they have become a lot more complicated from just a telephone to hold a convocation. </p>
+                
+                <p>All these changes have happened rather rapidly and if users don’t keep up with the changes then they can feel as if they are being technically left behind. It has been shown that young people are more versatile to the new technology because they “are immersed in new technologies from birth and grow up with them as part of their every-day lives” (Healy, 2007), this means that using things with a touch screen are now imbedded in their nature, they can pick up a device and after a little play “a teen can figure it out without the book in under an hour” (Nickson, 2016) with no issues.</p>
+                
+                <p>However it almost seems the opposite when it comes to the older generation, it almost seems as if they have to play catch up with how to use items like smart phones; “there is clearly a large cohort of people who feel excluded by technology. They find it a bit impenetrable" (Hosking, 2015). It also will be seen that they will be the ones to get frustrated with something not doing what they want only due to them not knowing how to do it, some said they “found it intimidating and complicated” which just adds to reason that they may struggle with the use of touch screens it has been shown that devises have a response time of 0.7 seconds but the elderly have a response time of about a second which means they might hit the screen harder than if it was a toddler using the device. </p>
+                
+                <div data-role="collapsible" data-theme="b">
+                     <h2>Simon</h2>
+                <img src="images/kid.jpeg" alt="Pexels image of young man"/>
+                
+                <h4>Job/Responsibility:</h4>
+                    <p>Student at Brighton University</p>
+                    
+                <h4>Demographic:</h4>
+                <ul>
+                    <li>22 Years Old</li>
+                    <li>Lives at home</li>
+                    <li>Studies AI Engineering</li>
+                    <li>Second Year Student</li> 
+                </ul> 
+                    <h4>About Simon</h4>
+                    <p>Because Simon is 22 years old and studying on a computer related course he is very proficient when it comes to technology, there is no reason why he shouldn’t be able to use a touch screen. In fact he has a mobile phone in his pocket at all times meaning he can go on any of the social medias he is part of like Snapchat or Instagram where he posts pictures of the work. He will always have his phone just in case he wants to take a picture when riding his bike, or any other occasion.</p>
+                    
+                    <h4>Quote from Simon</h4>
+                    
+                    <p>“I always have my phone just in case of emergencies or I need to take pictures on it”</p>
+                </div>
+                
+                
+                <div data-role="collapsible" data-theme="b">
+                     <h2>Derick</h2>
+                <img src="images/oldman.jpeg" alt="Pexels image of elderly man"/>
+                
+                    <h4>Job/Responsibility:</h4>
+                    <p>Retired</p>
+                    
+                    <h2>Demographic:</h2>
+                <ul>
+                    <li>72 Years Old</li>
+                    <li>Lives with his wife Matilda</li>
+                    <li>Retiered</li>
+                    <li>Two Children</li>
+                    <li>Four Grandchildren</li>
+                    <li>Worked as a local shop keeper</li>
+                </ul> 
+                    
+                    <h4>About Derick</h4>
+                    <p>Derick spends most of his days down by the local lake fishing in his spare time now that he is retired. He enjoys having days when his children come round and bring the grandchildren and they show him what they have been doing in school. Generally they will arrive with a new piece of technology that he can’t seem to get his head round and the grandchildren will always slap their heads in a joking way when he doesn’t quite understand how the touch screen works or why he will keep clicking the wrong thing.</p>
+                    
+                    <h4>Quote from Derick</h4>
+                    <p>“I would rather my fishing rod to any ‘tablet’ any day”</p>
+                    
+                </div>
+                
+                
+                    
+            </div>
+                 <div data-role="footer"> 
+                <div data-role="collapsible" data-theme="b">
+                    <h2>References</h2>
+                    <ol data-role="listview" data-inset="true">
+                        <li><a href="https://www.pexels.com/search/phones/">Pexels Images</a></li>
+                        <li><a href="http://www.bbc.co.uk/news/technology-32511489">BBC Article generation that tech forgot</a></li>
+                        <li><a href="http://www.atechnologysociety.co.uk/how-young-generation-accepts-technology.html">How a Young Generation Accepts Technology</a></li>
+                    </ol>
+                </div>
+                     <p id="footer-copyright">Rupert Garland 2018 &copy;</p>
+            </div>           
+            </div>
+                         
+        
+        
+        
+                  
+        
+        
+        
+        
+        
+          <div data-role="page" id="conclution" data-title="conclution">
+            <div data-role="header" class="banner">
+                <img src="images/conclusion.jpg" 
+                alt="Pexels image of phone"/>
+                <a href="#panelcon" data-role="button" data-icon="bars" data-iconpos="notext">Menu</a>
+                <a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext"></a>
+            </div>    
+            
+            <div data-role="panel" id="panelcon" data-theme="b">
+                    <div data-role="header" >
+                         <h3>Menu</h3>
+                    </div>
+                <div data-role="content">
+        <!--The primary navigation for the page -->
+                <ul data-role="listview">
+                    <li><a href="#introduction" data-role="button" data-icon="home">Introducton</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#problems">Problems of touch</a></li>
+                    <li><a href="#types">Types of gesture</a></li>
+                    <li><a href="#person">Personas</a></li>
+                    <li><a href="#conclution"  data-role="button" class="ui-disabled">Conclution</a></li>
+                </ul>
+            </div>
+                </div>
+            
+            <div data-role="content">
+                
+                <h1>Conclusion</h1>
+                
+                <p>I have created a good website that will show the necessary information for touch and gestures as well as trying to incorporate the use of some of them within the website without making the website difficult to use. I feel I have shown in great detail the possibilities that happen when it comes to the use of touch screens on such devices as well as the problems they have including the huge changes that have happened over the years from when touch screen first took a hold on the mass market.</p>
+                
+            </div>
+                        <div data-role="footer"> 
+                <div data-role="collapsible" data-theme="b">
+                    <h2>References</h2>
+                    <ol data-role="listview" data-inset="true">
+                      <li><a href="https://www.pexels.com/search/phones/">Pexels Images</a></li>
+                    </ol>
+                </div>
+                            
+                        <div data-role="collapsible" data-theme="b">
+                            
+                                <h2>Bibliography</h2>
+                            <ol data-role="listview" data-inset="true">
+                            <li><a href="http://www.knowyourmobile.com/nokia/nokia-3310/19848/history-mobile-phones-1973-2008-handsets-made-it-all-happen">The Fist Mobile Phone</a></li>
+                             <li><a href="http://mashable.com/2012/11/09/touchscreen-history/#Qpa3tALtYsqO">reference</a></li>
+                             <li><a href="https://www.t3.com/features/a-brief-history-of-the-iphone">History of iPhone</a></li>
+                             <li><a href="https://www.youtube.com/watch?v=x7qPAY9JqE4">iPhone reveal</a></li>
+                             <li><a href="http://www.sciencedirect.com/science/article/pii/S1071581912000948">Journal on Human-Computer Studies</a></li>
+                            <li><a href="https://ios.gadgethacks.com/news/people-are-pissed-about-ios-11s-new-notification-system-0177949/">IOS Notifications</a></li>
+                                                    <li><a href="http://uk.businessinsider.com/biggest-difference-between-android-iphone-2015-8">Android differnces</a></li>
+                            <li><a href="https://thenextweb.com/dd/2015/11/09/how-to-implement-gestures-into-your-mobile-design/">Image of Gesture Types</a></li>
+                             <li><a href="https://boingboing.net/2017/11/07/iphone-x-is-a-user-interface-d.html">iPhoneX Interface Sheet</a></li>
+                                                    <li><a href="https://www.youtube.com/watch?v=9Ca8zWJOlFQ&t=726s">Marques Brownlee on the iPhoneX</a></li>
+                             <li><a href="http://www.bbc.co.uk/news/technology-32511489">BBC Article generation that tech forgot</a></li>
+                            <li><a href="http://www.atechnologysociety.co.uk/how-young-generation-accepts-technology.html">How a Young Generation Accepts Technology</a></li>
+                            </ol>
+                            
+                        </div>
+                            <p id="footer-copyright">Rupert Garland 2018 &copy;</p>
+            </div>
+        </div>
+
+    </body>    
 </html>
